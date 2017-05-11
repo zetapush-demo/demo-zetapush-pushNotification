@@ -1,0 +1,17 @@
+recipe com.zetapush.tuto.pushNotification 1.0.0;
+
+/** a simple authentication service */
+service auth = simple(__default);
+
+/** our code is run by this service */
+service code = macro(__default) for 'src';
+
+/** push notification service */
+service push = notif(__default);
+push.notifs_createApp({
+	credential : "<API key>", 
+	applicationName : "<applicationNameID>", 
+	platform : NotificationPlatform_GCM, 
+	principal : null, 
+	appId : "<appId>"
+});

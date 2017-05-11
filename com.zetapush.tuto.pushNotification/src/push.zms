@@ -1,0 +1,9 @@
+// Register the device on the push notification service
+macroscript register(string token) {
+	push.register({deviceToken : token, appId : "<appId>"});
+}
+
+// Send a push notification to the device previously registered
+macroscript send(string target, string message){
+	push.send({target : __userKey, message : message});
+}
