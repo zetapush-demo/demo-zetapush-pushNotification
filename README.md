@@ -1,7 +1,7 @@
 This tutorial show how to send Push notifications with ZetaPush.
 
-**pushNotification** : Mobile application to send and receive push notifications
-**com.zetapush.tuto.pushNotification** : Server side that act as Push notification sender
+**pushNotification** : Mobile application to send and receive push notifications  
+**com.zetapush.tuto.pushNotification** : Server side that act as Push notification sender  
 
 
 # Push notification sending with ZetaPush #
